@@ -10,6 +10,6 @@
 
 #### Errors
 -ng.ps1 cannot be loaded.
-`set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
-`Get-ExecutionPolicy`
+`set-ExecutionPolicy RemoteSigned -Scope CurrentUser<br>`
+`Get-ExecutionPolicy<br>`
 `Get-ExecutionPolicy -list`
