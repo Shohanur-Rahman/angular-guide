@@ -11,17 +11,14 @@
 - run command `ng g g auth`
 - after thar add bellow code to guard
 <br/>
+```javascript
+// This is a multiline code block
+function example() {
+    console.log("Hello, World!");
+    console.log("This is a multiline code block.");
+}
 ```
-export const authGuard: CanActivateFn = (route, state) => {
-  const router = inject(Router);
-  const token = localStorage.getItem("KPIMSWebApp");
-  if(token != null)
-    return true;
 
-  router.navigateByUrl("account/login");
-  return false;
-};
-```
 
 - ###### Create interceptor (for passing bearer token): `ng g interceptor apiHelper`
 
