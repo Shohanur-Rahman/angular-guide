@@ -26,6 +26,18 @@ export const authGuard: CanActivateFn = (route, state) => {
 
 
 - ###### Create interceptor (for passing bearer token): `ng g interceptor apiHelper`
+```
+export const apiHelperInterceptor: HttpInterceptorFn = (req, next) => {
+  const token = localStorage.getItem("KPIMSWebApp");
+  const request = req.clone({
+    setHeaders: {
+      Authorization: `Bearer ${token}`
+    }
+  });
+  return next(request);
+};
+
+```
 
 #### Errors
 - #### ng.ps1 cannot be loaded. The file ng.ps1 is not digitally signed. You cannot run this script on the current system.
