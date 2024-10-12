@@ -11,13 +11,13 @@
 - run command `ng g g auth`
 - after thar add bellow code to guard
 <br/>
-```javascript
-// This is a multiline code block
-function example() {
-    console.log("Hello, World!");
-    console.log("This is a multiline code block.");
-}
+```markdown
+    function example() {
+        console.log("Hello, World!");
+        console.log("This is a multiline code block.");
+    }
 ```
+
 
 
 - ###### Create interceptor (for passing bearer token): `ng g interceptor apiHelper`
