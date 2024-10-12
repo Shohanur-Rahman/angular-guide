@@ -11,9 +11,16 @@
 - run command `ng g g auth`
 - after that add bellow code to guard
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+export const authGuard: CanActivateFn = (route, state) => {
+  const router = inject(Router);
+  const token = localStorage.getItem("KPIMSWebApp");
+  if(token != null)
+    return true;
+
+  router.navigateByUrl("account/login");
+  return false;
+};
+
 ```
 
 
