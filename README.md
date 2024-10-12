@@ -3,12 +3,12 @@
 ##### Md. Shohanur Rahman
 ***
 
-- Install NPM
-- Create New Project : `ng new my_project`
-- Run Project `npm start`
-- Create component `ng g c myComponent`
-- Create guard `ng g g auth`
-- Create interceptor `ng g interceptor apiHelper`
+- ###### Install NPM
+- ###### Create New Project : `ng new my_project`
+- ###### Run Project: `npm start`
+- ###### Create component: `ng g c myComponent`
+- ###### Create guard (for protect url): `ng g g auth`
+- ###### Create interceptor (for passing bearer token): `ng g interceptor apiHelper`
 
 #### Errors
 - #### ng.ps1 cannot be loaded. The file ng.ps1 is not digitally signed. You cannot run this script on the current system.
