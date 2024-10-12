@@ -11,7 +11,7 @@
 - run command `ng g g auth`
 - after thar add bellow code to guard
 <br/>
-```javascript
+```
 export const authGuard: CanActivateFn = (route, state) => {
   const router = inject(Router);
   const token = localStorage.getItem("KPIMSWebApp");
