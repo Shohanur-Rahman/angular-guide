@@ -7,7 +7,19 @@
 - ###### Create New Project : `ng new my_project`
 - ###### Run Project: `npm start`
 - ###### Create component: `ng g c myComponent`
-- ###### Create guard (for protect url): `ng g g auth`
+###### How to create angular guard: 
+- run command `ng g g auth`
+- after thar add bellow code to guard
+<br/>
+  `export const authGuard: CanActivateFn = (route, state) => {
+  const router = inject(Router);
+  const token = localStorage.getItem("KPIMSWebApp");
+  if(token != null)
+    return true;
+
+  router.navigateByUrl("account/login");
+  return false;
+};`
 - ###### Create interceptor (for passing bearer token): `ng g interceptor apiHelper`
 
 #### Errors
