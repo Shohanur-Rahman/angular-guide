@@ -9,8 +9,7 @@
 - ###### Create component: `ng g c myComponent`
 ###### How to create angular guard: 
 - run command `ng g g auth`
-- after thar add bellow code to guard
-<br/>
+- after that add bellow code to guard
 ```
 function test() {
   console.log("notice the blank line before this function?");
