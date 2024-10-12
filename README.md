@@ -8,6 +8,7 @@
 - Run Project `npm start`
 - Create component `ng g c myComponent`
 - Create guard `ng g g auth`
+- Create interceptor `ng g interceptor apiHelper`
 
 #### Errors
 - #### ng.ps1 cannot be loaded. The file ng.ps1 is not digitally signed. You cannot run this script on the current system.
